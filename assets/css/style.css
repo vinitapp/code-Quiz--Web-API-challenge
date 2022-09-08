@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    display: flex;
+    display: flex; /* Flex container to display the child elements as flex with space between and wrap */
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
@@ -20,7 +20,7 @@ header {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Merienda';font-size: 22px;
+    font-size: 22px;
   }
 
 .btnHeader {
@@ -28,13 +28,17 @@ header {
     background-color: white;
     text-decoration: none;
     border: 0;
-    outline: 0; 
+    outline: 0; /* Remove border around button */
     color: blueviolet;
-    font-family: 'Merienda';font-size: 20px;
+    font-size: 20px;
 }
 
 .btnHeader:hover {
+
     background-color: pink;
+    
+  
+    
 }
 
 .btn {
@@ -43,7 +47,7 @@ header {
     outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
-    font-family: 'Merienda';font-size: 10px;
+    font-size: 10px;
 }
 
 
@@ -63,10 +67,11 @@ header {
 
 
 #gridContainer {
+   /* width:65%; /* Contain the grid to a maximum of 80% of the flex wrapper */
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 2fr 1fr;  
-    grid-template-rows: repeat(10, 1fr); 
-    gap: 10px 10px; 
+    grid-template-columns: repeat(2, 1fr) 2fr 1fr;  /* Create a 4X4 grid of same size*/
+    grid-template-rows: repeat(10, 1fr); /* 4 rows of equal size */
+    gap: 10px 10px; /* Gap on x and y grid */
     font-size: 22px;
 }
 
@@ -110,9 +115,9 @@ header {
     grid-column: 3 / span 1;
     grid-row: 7 / span 1;
     padding: 10px 10px 10px 10px;
-    border-radius: 10;
+    border-radius: 10%;
     border: 0;
-    outline: 0; 
+    outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
     font-size: 15px;
@@ -122,9 +127,9 @@ header {
     grid-column: 2 / span 2;
     grid-row: 5 / span 1;
     padding: 10px 10px 10px 10px;
-    border-radius: 10;
+    border-radius: 10%;
     border: 0;
-    outline: 0; 
+    outline: 0; /* Remove border around button */
     background-color: purple;
     place-self: center;
     color: white;
@@ -135,9 +140,9 @@ header {
     grid-column: 1 / span 2;
     grid-row: 6 / span 1;
     padding: 10px 10px 10px 10px;
-    border-radius: 10;
+    border-radius: 10%;
     border: 0;
-    outline: 0; 
+    outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
     font-size: 15px;
@@ -148,9 +153,9 @@ header {
     grid-column: 1 / span 2;
     grid-row: 7 / span 1;
     padding: 10px 10px 10px 10px;
-    border-radius: 10;
+    border-radius: 10%;
     border: 0;
-    outline: 0; 
+    outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
     font-size: 15px;
@@ -163,9 +168,9 @@ header {
     grid-column: 1 / span 2;
     grid-row: 8 / span 1;
     padding: 10px 10px 10px 10px;
-    border-radius: 10;
+    border-radius: 10%;
     border: 0;
-    outline: 0; 
+    outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
     font-size: 15px;
@@ -176,9 +181,9 @@ header {
     grid-column: 1 / span 2;
     grid-row: 9 / span 1;
     padding: 10px 10px 10px 10px;
-    border-radius: 10;
+    border-radius: 10%;
     border: 0;
-    outline: 0; 
+    outline: 0; /* Remove border around button */
     background-color: purple;
     color: white;
     font-size: 15px;
@@ -223,8 +228,9 @@ header {
 
 
 #answerCorrectWrongGrid {
+    
     display: grid;
-    grid-template-columns: 4fr; 
+    grid-template-columns: 4fr;  
     grid-template-rows: repeat(2, 1fr); 
     gap: 10px 10px; 
     font-size: 22px;
@@ -237,6 +243,8 @@ header {
     grid-row: 1 / span 2;
     
 }
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -299,6 +307,8 @@ header {
 
 }
 
+
+   /* This will be applied on any screen smaller than 575px */
 @media screen and  (max-width: 575px) {
 
     #answer1:hover{
