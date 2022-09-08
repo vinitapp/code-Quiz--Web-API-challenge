@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code Quiz Game</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     <header>
@@ -19,9 +19,11 @@
          
     </header>
 
-        <div id="mainDiv"> <!-- Container for grid items -->
+        <div id="mainDiv">
             <div id="gridContainer">
-                <p id="questionDisplay">Welcome to our code Quiz!</p>
+                <p id="questionDisplay">Coding Quiz Challenge </p>
+                <p>Try to answer the following cose-related questions within the time limit</p>
+                <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
                 <p id="finalScoreDisplay"></p>
                 <p id="enterInitials"></p>
                 <textarea id=enterInitialsTextArea></textarea>
@@ -30,7 +32,7 @@
                 <button class="btn" id="answer2"></button>
                 <button class="btn" id="answer3"></button>
                 <button class="btn" id="answer4"></button>
-                <button class="btn" id="submitScore"></button> <!-- Grid nows where to put next item.-->
+                <button class="btn" id="submitScore"></button> 
 
             </div>
             <div id="answerCorrectWrongGrid"></div>
@@ -39,6 +41,6 @@
 
     </section>
     
-    <script src="./assets/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
