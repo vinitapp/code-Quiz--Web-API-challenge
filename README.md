@@ -14,4 +14,7 @@ This code quiz can be shared and challenge others and can also the view the high
 <img src="./assets/images/initial.png" alt="add name">
 
 Git Hub Repository:
-<a href="https://github.com/vinitapp/codeQuiz-Web-API-challenge.git">
+<a href="https://github.com/vinitapp/codeQuiz-Web-API-challenge.git"> </a>
+
+Deployed IO:
+<a href="https://vinitapp.github.io/codeQuiz-Web-API-challenge/"></a>
